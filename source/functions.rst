@@ -7,20 +7,20 @@ Introduction
 Programmers can deal with some pretty complex and abstract problems, but one 
 sign of a good programmer is that they're lazy. They only like to deal with one 
 thing at a time. So you need a way to break up problems into smaller, discrete 
-pieces, which lets you focus on just the piece you want to.
+pieces, which lets you focus on just one piece.
 
-Functions are one way to do this abstraction in Python. Let's take
+Functions are one way to do this in Python. Let's take
 ``turtle.reset()`` for example. ``reset`` is a function we call on our ``turtle``, and 
-it is actually an abstraction for a number of steps, namely:
+it performs a number of steps:
 
 * Erase the drawing board.
-* Set the width and color back to default.
+* Set the pen width and color back to default.
 * Move the turtle back to its initial position.
 
-But because all the code is contained in the function, we don't have to worry about these 
-details. We can simply *call* this function, and know it will do what it says for us.
+But because all the code is contained in the function, we don't have to worry about the 
+details. We can simply *call* (i.e. run) the function, and know it will do what it says for us.
 
-So - how to write your own?
+So - how to write your own function?
 
 A function can be defined with the ``def`` keyword in Python::
 
@@ -52,25 +52,43 @@ We could write more functions to remove some of the repetition::
     for _ in range(5):
         star_arm()
 
+**Defining a function** is like writing a recipe to bake a cake. Once it's done 
+you have the recipe, but you still don't have the cake!
+
+**Calling a function** is like following the recipe and baking the cake. Once you
+have written the recipe you can follow it as many times as you like, and you'll
+get a cake each time!
+
 .. important::
 
-   Python uses *indenting with whitespace* to identify blocks of code
+   As with loops, Python uses *indenting* for blocks of code
    that belong together. In Python a block (like the function
    definitions shown above) is introduced with a colon at the end of the
-   line and subsequent commands are indented --- usually 4 spaces
+   line, and subsequent commands are indented --- usually 4 spaces
    further in. The block ends with the first line that isn't indented.
 
    This is different to many other programming languages, which use
    special characters (like curly braces ``{}``) to group blocks of
    code together.
 
-   Never use tab characters to indent your blocks, only spaces. You
-   can -- and should -- configure your editor to put 4 spaces when you
-   press the tab key. The problem with using tab characters is that
-   other python programmers use spaces, and if both are used in the
-   same file python will read it wrong (in the best place, it will
-   complain, and in the worst case, weird, hard to debug bugs will
-   happen).
+You have to define a function before you call it, or Python won't know what you mean.
+
+So this works::
+
+    def my_lovely_function():
+        print("I am called")
+
+    my_lovely_function()
+
+but this doesn't::
+
+    my_lovely_function()
+
+    def my_lovely_function():
+        print("I am called")
+
+If you call a function before it is defined, it's like trying to read a
+recipe that hasn't been written yet.
 
 A function for a square
 =======================

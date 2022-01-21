@@ -17,3 +17,8 @@
 button._show_hide {
   font-size: large;
 }
+
+p {
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}

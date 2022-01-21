@@ -7,6 +7,7 @@ Intro to Programming with 🐢Turtles🐢
     getting_started
     alternative_python_setup
     simple_drawing
+    history
     variables
     loops
     functions

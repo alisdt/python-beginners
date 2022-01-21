@@ -43,12 +43,14 @@ and see what you think they do, or run them to be certain::
     if not condition:
         print("condition not met")
 
-    direction = -30
-    if direction > 0 :
-        turtle.forward(direction)
+    # Only draw in green if we're going a long way
+    distance = 200
+    if distance > 100:
+        turtle.pencolor("green")
+        turtle.forward(distance)
     else:
-        turtle.left(180)
-        turtle.forward(-direction)
+        turtle.pencolor("black")
+        turtle.forward(distance)
 
 Giving Directions
 =================

@@ -7,7 +7,7 @@ Introduction
 ============
 
 "Turtle" is a python feature like a drawing board, which lets you command
-a turtle to draw all over it!
+a little character called a turtle to draw all over it!
 
 You can use functions like ``turtle.forward(...)`` and ``turtle.left(...)``
 which can move the turtle around.
@@ -93,6 +93,7 @@ Now put a few of these commands in a file, one after the other. For example:
     turtle.left(90)
     turtle.forward(40)
 
+(In Noteable you don't need "import turtle" as your turtle has already been created).
 Feel free to make up your own, for example changing the turtle shape in Thonny,
 or using the ``turtle.right(...)`` and ``turtle.backward(...)`` commands as well.
 
@@ -102,7 +103,7 @@ Now you can run the code -- in Thonny click |thonny_run|, in Noteable press :kbd
 
     In Thonny, you'll see that the turtle
     window vanishes after the turtle finished moving! This is because
-    Python exits when the program ends‒since the turtle window 🐢🐴
+    Python exits when the program ends‒since the turtle window
     belongs to Python, it goes away as well. Computers only do exactly what they're told to, and we
     didn't tell it to keep the window open. To prevent that, just put
     ``turtle.exitonclick()`` at the bottom of your file.  Now the window stays open
@@ -187,10 +188,10 @@ Bonus
 -----
 
 If you want to get creative, you can modify your shape with the
-``turtle.color(...)`` function (this is called ``turtle.pencolor(...)`` in Noteable).
+``turtle.pencolor(...)`` function.
 How do you use this function?  Before you can use a function you need to know
 its *signature* (for example what to put between the parentheses and what those
-things mean.) To find this out you can run ``help(turtle.color)`` (or ``help(turtle.pencolor)`` in Noteable).
+things mean). To find this out, run ``help(turtle.pencolor)``.
 
 .. tip::
 
@@ -209,14 +210,14 @@ Another way to find out about functions is to browse the `online documentation`_
 
 .. caution::
 
-    If you misdrew anything, see :ref:`Resetting the turtle display` above.
+    If you misdrew anything, see `Resetting the turtle display`_ above.
 
 .. tip::
 
-   As you might have read in the help, you can modify the color with
+   As you might have read in the help, you can modify the color [#color]_ with
    :samp:`turtle.color({colorstring})`.  These include but are not limited to
-   "red" "green" and "violet."  See this `colours manual`_ for an extensive
-   list.
+   "red" "green" and "violet". Lots of other color names will work. Try some
+   out!
 
 Drawing a rectangle
 ===================
@@ -305,3 +306,10 @@ Solution
     turtle.forward(50)
     turtle.left(90)
 
+And that's it for your first turtle program!
+--------------------------------------------
+
+.. rubric:: Footnotes
+
+.. [#color] I'll use the American spelling ("color") here to avoid confusion.
+   Both Thonny and mobilechelonian use that spelling!

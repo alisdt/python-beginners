@@ -4,23 +4,23 @@ Loops
 Introduction
 ============
 
-Something you might have noticed: our programs often feature repetition. 
-Python has a powerful concept it makes use of called looping 
-(jargon: *iteration*), which we can use to cut out our reptitive code! 
-For now, **try this easy example**::
+You might have noticed that the code we've written so far has been very
+repetitive. Python has a feature called a "loop", which we can use to
+make this code less repetitive! 
+For now, **try this example**::
 
-    for name in "John", "Sam", "Jill":
+    for name in ["John", "Sam", "Jill"]:
         print("Hello " + name)
 
-This is incredibly helpful if we want to do something multiple times --- say, 
-drawing the individual border lines of a shape --- but only want to write that 
-action once. Here's another version of a loop::
+This is incredibly helpful if we want to do the same thing multiple
+times‒like drawing the edges of a square‒but only want to write that 
+action once. Here's another version of a loop, try this::
 
     for i in range(10):
         print(i)
 
 Notice how we write only one line of code using ``i``, but it takes on 10 
-different values?
+different values? The code runs once for each value we give it.
 
 The :samp:`range(n)` function can be considered a shorthand 
 for ``0, 1, 2, ..., n-1``. If you want to know more about it, you can use 
@@ -30,35 +30,39 @@ Use the :kbd:`q` key to exit the help again.
 You can also loop over elements of your choice::
 
     total = 0
-    for i in 5, 7, 11, 13:
+    for i in [5, 7, 11, 13]:
         print(i)
         total = total + i
         
     print(total)
 
-Write this example out and run it with python, to check it works how you might 
+Write this example in a new code file and run it, to check it works how you might 
 expect.
 
 .. note::
 
-   Notice how above, the lines of code that are *looped*, are the ones that 
-   are *indented*. This is an important concept in Python - that's how it 
-   knows which lines should be used in the ``for`` loop, and which come 
-   after, as part of the rest of your program. Use four spaces (hitting tab) 
-   to indent your code.
+   Notice how above, the lines of code that run multiple times, are the ones that 
+   are *indented*. This is an important concept in Python‒that's how it 
+   knows which lines are inside the ``for`` loop, to be run once for each value
+   you give it, and which are part of the rest of your program.
+   Thonny and Noteable will both help you by automatically indenting the line
+   after ``for .... :``
 
 Sometimes you want to repeat some code a number of times, but don't care about 
-the value of the ``i`` variable; so it can be good practice to replace it 
-with ``_`` instead. This signifies that we don't care about its value, or 
-don't wish to use it. Here's a simple example::
+the value of the index variable (``i`` in the code above). If that's the case 
+use ``_`` instead. This shows that we don't care about its value, or 
+won't use it. Here's a simple example::
 
     for _ in range(10):
         print("Hello!")
 
+So in this code ``for _ in range(10):`` just means "do the following 10 times".
+
 You may or may not be wondering about the variable ``i`` - why is it used all 
 the time above? Well, it simply stands for "index" and is one of the most 
 common variable names ever found in code. But if you are looping over something 
-other than just numbers, be sure to name it something better! For instance::
+other than just numbers, be sure to name it something better! For instance (just
+for illustration, don't type this in)::
 
     for drink in list_of_beverages:
         print("Would you like a " + drink + "?")
@@ -100,14 +104,14 @@ Can you make the dashes become larger as the line progresses?
 
 .. hint::
 
-   Feeling lost?  Inspect ``i`` at every run of the loop::
+   Feeling lost?  Print your loop variable (in this case ``i``) at every run of the loop::
 
        for i in range(10):
            print(i)
            # write more code here
 
-   Can you utilize ``i`` --- commonly called the **index** variable or loop 
-   variable --- to get increasing step sizes?
+   Can you utilize ``i``‒commonly called the **index** variable or loop 
+   variable‒to get increasing step sizes?
 
 Comments
 ========

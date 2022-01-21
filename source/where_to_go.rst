@@ -16,19 +16,19 @@ Books and Tutorials
 If you like learning from a book, there are heaps of good ones, and even many 
 that can be read freely on the web!
 
-- `OTS Python Portal`_ - Check the rest of our tutorials, and look out for 
+- `OpenTechSchool Python Portal`_ This tutorial is based on materials by OpenTechSchool,
+  check out the rest of their tutorials, and look out for 
   future workshops!
-- `O'Reilly`_ publishes hundreds of books and ebooks, on python and many other 
-  technologies (check out Learning Python, 5th edition).
+- `O'Reilly`_ publishes hundreds of books and ebooks, on Python and many other 
+  technologies.
 - `Invent with Python`_ takes a practical approach, with three different ebooks 
   that can be read online for free.
-- `Learn Python the Hard Way`_ is a step by step full tutorial on the language, 
-  done in a unique style.
 - `Dive into Python 3`_ is another great book available online for free!
-- Last but not least, python.org has `Its own tutorial!`_
+- Last but not least, python.org has `its own tutorial!`_ . This is a little dense and
+  is perhaps
 
 
-.. _OTS Python Portal: http://python.opentechschool.org/
+.. _OpenTechSchool Python Portal: http://python.opentechschool.org/
 .. _O'Reilly: 
    http://shop.oreilly.com/category/browse-subjects/programming/python.do
 .. _Invent with Python: http://inventwithpython.com/
