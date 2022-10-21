@@ -37,10 +37,14 @@ finished the exercises you can always move on to the next one.
 gather.town
 ===========
 
+This section applies only to the online class on Wednesdays, which uses
+gather.town. If you signed up for this class you should have received a
+link to access the classroom.
+
 Gather works using proximity. This means that you can see and hear people
 that are near you.
 
-The tables in the Auditorium are "private areas". That means that when you
+The tables in the classroom are "private areas". That means that when you
 sit at a table you can see and hear only the people at the table.
 
 In addition, people can be "spotlighted", meaning that they can be heard by
@@ -78,8 +82,8 @@ and that's what I recommend for this course:
 | `Thonny for Mac OS X`_
 | `Thonny for Linux`_
 
-.. _Thonny for Microsoft Windows: https://github.com/thonny/thonny/releases/download/v3.3.13/thonny-3.3.13.exe
-.. _Thonny for Mac OS X: https://github.com/thonny/thonny/releases/download/v3.3.13/thonny-3.3.13.pkg
+.. _Thonny for Microsoft Windows: https://github.com/thonny/thonny/releases/download/v4.0.1/thonny-4.0.1.exe
+.. _Thonny for Mac OS X: https://github.com/thonny/thonny/releases/download/v4.0.1/thonny-4.0.1.pkg
 .. _Thonny for Linux: https://github.com/thonny/thonny/wiki/Linux
 
 Once you've installed this start it up. You should see something like this:
@@ -108,7 +112,7 @@ the rest in the class. (Feel free to keep reading if you're interested, of cours
 Python is a **programming language**. You've probably heard this term before, but what
 does it mean? It means that Python takes text that 
 you've written (called **code**), turns it into instructions for 
-your computer, and runs those instructions. We'll be learning how to write code 
+your computer, and follows those instructions. We'll be learning how to write code 
 to do cool and useful stuff. No longer will you be restricted to using other people's 
 programs to do things with your computer‒you can make your own!
 

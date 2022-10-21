@@ -4,7 +4,7 @@ Variables
 Introduction
 ============
 
-Whew. Experimenting with the angles requires you to change three different 
+Whew. In the tilted squares exercise, experimenting with the angles requires you to change three different 
 places in the code each time. Imagine you'd want to experiment with 
 all of the square sizes, let alone with rectangles! We can do better than that.
 
@@ -13,7 +13,7 @@ whenever you refer to a variable, you actually mean something else. That concept
 might be familiar from symbolic maths, where you would write: *Let x be 5.*
 Then *x \* 2* will obviously be *10*.
 
-In Python syntax, that very statement translates to::
+In Python syntax, *Let x be 5* would be written like this::
 
     x = 5
 

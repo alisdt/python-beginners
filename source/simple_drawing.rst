@@ -94,7 +94,7 @@ Now put a few of these commands in a file, one after the other. For example:
     turtle.forward(40)
 
 (In Noteable you don't need "import turtle" as your turtle has already been created).
-Feel free to make up your own, for example changing the turtle shape in Thonny,
+Feel free to experiment with these, for example changing the turtle shape in Thonny,
 or using the ``turtle.right(...)`` and ``turtle.backward(...)`` commands as well.
 
 Now you can run the code -- in Thonny click |thonny_run|, in Noteable press :kbd:`Shift-Enter`.
